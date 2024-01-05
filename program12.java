@@ -1,14 +1,22 @@
-import java.util.Scanner;
-class BreakEx1{
+class Student5 {
+int id;
+String name;
+int age;
+Student5(int i,String n){
+id = i;
+name = n;
+}
+Student5(int i,String n,int a){
+id = i;
+name = n;
+age = a;
+}
+void display(){System.out.println(id+" "+name+" "+age);}
+
 public static void main(String args[]){
-Scanner sc=new Scanner(System.in);
-int n=sc.nextInt();
-byte i=0;
-while(true){
-i++;
-if(i%5==0)continue;
-else{
-System.out.print(i+",");
+Student5 s1=new Student5(111,"prasad",17);
+Student5 s2=new Student5(222,"prasanth",18);
+s1.display();
+s2.display();
 }
 }
-}}

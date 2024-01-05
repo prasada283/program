@@ -1,15 +1,6 @@
-import java.util.Scanner;
-class SumDigits
-{
-public static void main(String[] args)
-{
-Scanner sc=new Scanner(System.in);
-int n;
-int sd=0;
-n=sc.nextInt();
-while(n>0){
-sd=sd+n%10;
-n=n/10;
-}
-System.out.println(sd);
-}}
+class Main{
+public static void main(String args[]){
+int[] age={12,5,6};
+System.out.println("using for-ecah loop:");
+for(int a:age){
+System.out.println(a);}}}

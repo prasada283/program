@@ -1,18 +1,19 @@
-import java.util.Scanner;
-
-class ProductDigits1
-
-{ public static void main(String[] args)
- { Scanner sc = new Scanner(System.in);
- int n;
-int pd=1;
- // To hold number int pd=1 // To hold sum of digits 
-System.out.print("Enter any positive integer: ");
- n= sc.nextInt();
- while( n>0) { 
-pd=pd*(n%10);
- n=n/10;
+class Student{
+int rollno;
+String name;
+float fee;
+Student(int rollno,String name,float fee){
+this.rollno=rollno;
+this.name=name;
+this.fee=fee;
 }
-
-System.out.println(pd);
+void display(){
+System.out.println(rollno+""+name+""+fee);}
+}
+class TestThis2{
+public static void main(String args[]){
+Student s1=new Student(111,"amit",5000f);
+Student s2=new Student(222,"arjun reddy",6000f);
+s1.display();
+s2.display();
 }}

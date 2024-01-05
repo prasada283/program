@@ -1,9 +1,6 @@
-class Test{
+class Main{
 public static void main(String args[]){
-int i=0;int j=100;
-int sum=0;
-for (i = 0,j=100; i <= 100&&j>=0; i++,j--){
-
-
-System.out.print(i+","+j+",");
-}}}
+int[] age={12,5,6,7,-8,4};
+System.out.println("using for loop:");
+for(int i=0;i<age.length;i++){
+System.out.println(age[i]);}}}

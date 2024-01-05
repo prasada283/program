@@ -1,13 +1,20 @@
-import java.util.Scanner;
-class Test
-{ public static void main(String[] args)
-{
-int i,j=0;
-for(i=0;i<3;i++){
-System.out.print("\n");
-for(j=0;j<5;j++) {
-if(j%2==1)break;
-System.out.print(" i="+i+"j="+j);
-}//jinneer loop
-}//i outer for loop
-}}
+class Student7 {
+int id;
+String name;
+Student7(int i,String n){
+id = i;
+name = n;
+}
+Student7(){
+}
+void display(){System.out.println(id+" "+name);}
+
+public static void main(String args[]){
+Student7 s1=new Student7(111,"prasad");
+Student7 s2=new Student7(222,"prasanth");
+s2.id=s1.id;
+s2.name=s1.name;
+s1.display();
+s2.display();
+}
+}

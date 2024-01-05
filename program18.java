@@ -1,19 +1,14 @@
-import java.util.Scanner;
-class FactorCountPrinter {
-public static void main(String[] args) {
-Scanner scanner = new Scanner(System.in);
-System.out.print("Enter a number: ");
-int userInput = scanner.nextInt();
-int factorCount = countFactors(userInput);
-System.out.println("Number of factors of " + userInput + " is: " + factorCount);
+class A{
+A(){
+this(5);
+System.out.println("hello a");
 }
-static int countFactors(int number) {
-int count = 0;
-for (int i = 1; i <= number; i++) {
-if (number % i == 0) {
-count++;
+A(int x){
+System.out.println(x);
 }
 }
-return count;
+class TestThis6{
+public static void main(String args[]){
+A a=new A();
 }
-}ss
+}

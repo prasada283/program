@@ -1,11 +1,11 @@
-class Test{
+import java.util.Scanner;
+class SI{
 public static void main(String args[]){
-int i=1;
-int sum=0;
-while(i<=20)
-{sum=sum+i;//sum +=i;
-i++;
-}
-System.out.println(sum);
-}
-}
+Scanner sc=new Scanner(System.in);
+int p=sc.nextInt();
+double r=sc.nextDouble();
+double t=sc.nextDouble();
+double si=p*r*t/100;
+
+System.out.println(si);
+}}

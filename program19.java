@@ -1,15 +1,23 @@
-class PrintNumbers {
-    public static void main(String[] args) {
-        // Printing 0 to 100
-        System.out.println("Numbers from 0 to 100:");
-        for (int i = 0; i <= 100; i++) {
-            System.out.println(i);
-        }
-
-        // Printing 0 to 100 in steps of -5
-        System.out.println("\nNumbers from 0 to 100 in steps of -5:");
-        for (int j = 0; j >= -100; j -= 5) {
-            System.out.println(j);
-        }
-    }
+class Student{
+int rollno;
+String name,course;
+float fee;
+Student(int rollno,String name,String course){
+this.rollno=rollno;
+this.name=name;
+this.course=course;
 }
+Student(int rollno,String name,String course,float fee){
+this(rollno,name,course);
+this.fee=fee;
+}
+void display(){
+System.out.println(rollno+" "+name+" "+course+" "+fee);}
+}
+class TestThis7{
+public static void main(String args[]){
+Student s1=new Student(111,"ara","java");
+Student s2=new Student(222,"gora","c",6000f);
+s1.display();
+s2.display();
+}}
