@@ -1,20 +1,11 @@
-class Student{
-private String name;
-private int id;
-
-public void setName(String name){this.name=name;}
-public void setId(int id){this.id=id;}
-
-public String getName(){return name;}
-public int getId(){return id;}
-
-}
-class BCA{
+import java.util.Scanner;
+class InputSwap2{
 public static void main(String args[])
 {
-Student ob=new Student();
-ob.setName("prasad");
-ob.setId(69);
-System.out.println("Name:"+ob.getName());
-System.out.println("Id:"+ob.getId());
+Scanner scob=new Scanner(System.in);
+int num1,num2;
+num1=scob.nextInt();
+num2=scob.nextInt();
+num1=num1;
+System.out.println(num1+"\n" +num2);
 }}

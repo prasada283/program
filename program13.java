@@ -1,17 +1,23 @@
-
 import java.util.Scanner;
-class Test{
-public static void main(String[] args){
-boolean cond = true;
-int a,b;
-Scanner sc=new Scanner(System.in);
-System.out.println("Cond is:"+cond);
-a = sc.nextInt();
-System.out.println("Var1:"+ a);
-b = sc.nextInt();
-System.out.println("Var2:"+ b);
-System.out.println("Now Cond is:"+!cond);
-System.out.println("!(a<b)="+!(a<b));
-System.out.println("!(a>b)="+!(a>b));
-}
+
+class Pattern2 {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        char ch = sc.next().charAt(0);  // Read a character input
+        int row = sc.nextInt();  // Assuming you want to read an integer for the number of rows
+        printPattern(ch, row);
+    }
+
+    public static void printPattern(char c, int n) {
+        for (int i = 1; i <= n; i++) {
+            printLine(c, i);
+        }
+    }
+
+    public static void printLine(char c, int col) {
+        System.out.println();  // Move to a new line before printing the pattern
+        for (int j = 1; j <= col; j++) {
+            System.out.print(c);
+        }
+    }
 }

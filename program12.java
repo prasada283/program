@@ -1,12 +1,15 @@
-class Test{
-public static void main(String[] args){
-boolean cond = true;
-int a=10,b=1;
-System.out.println("Cond is:"+cond);
-System.out.println("Var1:"+a);
-System.out.println("Var2:"+b);
-System.out.println("Now Cond is:"+!cond);
-System.out.println("!(a<b)="+!(a<b));
-System.out.println("!(a>b)="+!(a>b));
+import java.util.Scanner;
+class Pattern1{
+public static void printPattern(char c, int n){
+for(int i=0;i<n;i++){
+System.out.print("\n");
+for(int j=0;j<=i;j++)System.out.println(c);
+}
+}
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+char ch=sc.next().charAt(0);
+int row=sc.nextInt();
+printPattern(ch,row);
 }
 }
