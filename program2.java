@@ -1,15 +1,10 @@
-class c1{
-public void pra(){
-System.out.println("pra:i am from sai nagar");
-}
-public void ree(){
-System.out.println("ree:i am from jilani circle");
-}
-}
-class c2{
+import java.util.Scanner;
+class Test{
 public static void main(String args[]){
-c1 ob=new c1();
-ob.pra();
-ob.ree();
-}
-}
+Scanner scob=new Scanner(System.in);
+char c=scob.next().charAt(0);
+if(c=='0'||c=='1'||c=='2'||c=='3'||c=='4'||c=='5'||c=='6'||c=='7'||c=='8'||c=='9')
+System.out.println("yes");
+else
+System.out.println("no");
+}}

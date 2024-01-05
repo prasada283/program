@@ -1,10 +1,20 @@
-import java.util.Scanner;
-class Test{
+class Student{
+int rollno;
+String name;
+void insertRecord(int r,String n){
+rollno=r;
+name=n;
+}
+void displayInformation(){System.out.println(rollno+" "+name);}
+}
+
+class TestStudent4{
 public static void main(String args[]){
-Scanner scob=new Scanner(System.in);
-char c=scob.next().charAt(0);
-if((c>='A'&&c<='Z')||(c>='a'&&c<='z'))
-System.out.println("yes");
-else
-System.out.println("no");
-}}
+Student s1=new Student();
+Student s2=new Student();
+s1.insertRecord(69,"prasad");
+s2.insertRecord(68,"prasanth");
+s1.displayInformation();
+s2.displayInformation();
+}
+}

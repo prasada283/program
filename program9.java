@@ -1,9 +1,13 @@
+class Student{
+int id;
+String name;
+}
+class TestStudent2{
+public static void main(String args[]){
+Student s1=new Student();
+s1.id=69;
+s1.name="prasad";
+System.out.println(s1.id+" "+s1.name);
+}}	
 
-public static void main(Strig args[]){
-Scanner scob=new Scanner(System.in);
-int n=scob.nextInt();
-if(n%2==0)
-System.out.println("even");
-else
-System.out.println("odd");
-}}
+

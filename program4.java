@@ -1,20 +1,10 @@
 import java.util.Scanner;
-class Demo{
-public static int add(int a,int b){
-return a+b;
-}
-public static void printTable(int a){
-for(int i=1;i<=10;i++)
-System.out.println(a+"*"+i+"="+a*i);
-}
+class Test{
 public static void main(String args[]){
 Scanner scob=new Scanner(System.in);
-int n1=scob.nextInt();
-int n2=scob.nextInt();
-
-int res=Demo.add(n1,n2);
-System.out.println(res);
-Demo.printTable(n1);
-Demo.printTable(n2);
-}
-}
+char c=scob.next().charAt(0);
+if(c=='A'||c=='E'||c=='I'||c=='O'||c=='U'||c=='a'||c=='e'||c=='i'||c=='o'||c=='u')
+System.out.println("no it is vowels");
+else
+System.out.println("yes it is consonant");
+}}
