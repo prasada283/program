@@ -1,11 +1,15 @@
-import java.io.*;
-class Test{
-public static void main(String[] args){
+class PrePostIncrementExample
+{
+public static void main(String args[]){
 int i=10;
-long l=i;
-double d=i;
-System.out.println("Integer:"+i);
-System.out.println("Long:"+l);
-System.out.println("Double:"+d);
+int a=i++;
+System.out.println("a="+a);
+System.out.println(i);++i;
+System.out.println(++i);
+System.out.println(i++);
+System.out.println(i);
+int j =10;
+int b=++j;
+System.out.println("b="+b);
 }
 }

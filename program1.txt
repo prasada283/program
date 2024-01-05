@@ -1,9 +1,0 @@
-class BSC
-{
-public int x;
-public void setX(int a){x=a}
-}
-class BCA
-{
-system.out.println("good morning");
-

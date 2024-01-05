@@ -6,13 +6,6 @@ System.out.println("Enter the First number:");
 double num1= sc.nextDouble();
 System.out.println("Enter the Second number:");
 double num2= sc.nextDouble();
-if(num2==0)
-{
-System.out.println("Enter the Second number:");
-//double num2= sc.nextDouble();
-}
-else
-{
 double sum=num1 + num2;
 double difference = num1 - num2;
 double product = num1* num2;
@@ -24,4 +17,4 @@ System.out.println("The division of the two numbers:"+ div);
 System.out.println("The product of the two numbers:"+ product);
 System.out.println("The quotient of the two numbers:"+ quotient);
 }
-}}
+}
