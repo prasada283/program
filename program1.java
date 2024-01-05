@@ -1,10 +1,22 @@
-import java.util.Scanner;
-class Test{
-public static void main(String args[]){
-Scanner scob=new Scanner(System.in);
-char c=scob.next().charAt(0);
-if(c=='A'||c=='E'||c=='I'||c=='O'||c=='U'||c=='a'||c=='e'||c=='i'||c=='o'||c=='u')
-System.out.println("yes");
+class BSC
+{
+private int age;
+public void setAge(int age)
+{
+if(age<0)this.age=0;
 else
-System.out.println("no");
-}}
+this.age=age;
+}
+public int getAge(){return this.age;}
+}
+class BCA{
+public static void main(String args[])
+{
+System.out.println("good morning");
+BSC ob=new BSC();
+//ob.setAge(-10);
+ob.setAge(10);
+System.out.println("Age:"+ob.getAge());
+}
+
+

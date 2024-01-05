@@ -1,23 +1,24 @@
-class Employee{
-int id;
-String name;
-void insertRecord(int i,String n){
-id=i;
-name=n;
+import java.util.Scanner;
+class Input2{
+public static double div(int a,int b)
+{
+double c=a/b;
+return c;
 }
-void displayInformation(){System.out.println(id+" "+name);}
+public static int add(int a,int b)
+{
+int c=a+b;
+return c;
 }
-
-class TestEmployee4{
-public static void main(String args[]){
-Employee e1=new Employee();
-Employee e2=new Employee();
-Employee e3=new Employee();
-e1.insertRecord(69,"prasad");
-e2.insertRecord(68,"praree");
-e3.insertRecord(67,"jaysad");
-e1.displayInformation();
-e2.displayInformation();
-e3.displayInformation();
-}
-}
+public static void main(String args[])
+{
+Scanner scob=new Scanner(System.in);
+System.out.println("Enter a number:");
+int num1;
+num1=scob.nextInt();
+System.out.print("Enter a number:");
+int num2;
+num2=scob.nextInt();
+System.out.println(num1+"+"+num2+"="+add(num1,num2));
+System.out.println(num1+"/"+num2+"="+div(num1,num2));
+}}

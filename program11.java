@@ -1,20 +1,12 @@
-class Student{
-int rollno;
-String name;
-void insertRecord(int r,String n){
-rollno=r;
-name=n;
-}
-void displayInformation(){System.out.println(rollno+" "+name);}
-}
-
-class TestStudent4{
-public static void main(String args[]){
-Student s1=new Student();
-Student s2=new Student();
-s1.insertRecord(69,"prasad");
-s2.insertRecord(68,"prasanth");
-s1.displayInformation();
-s2.displayInformation();
-}
-}
+import java.util.Scanner;
+class countdigits{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+String str=sc.nextLine();
+int count=0;
+for(int i=0;i<str.length()-1;i++){
+if((str.charAt(i)=='a')||(str.charAt(i)=='e')||(str.charAt(i)=='i'||(str.charAt(i)=='o')||(str.charAt(i)=='u')||(str.charAt(i)=='A')||(str.charAt(i)=='E')||(str.charAt(i)=='I'))||(str.charAt(i)=='O')||(str.charAt(i)=='U')){
+count++;
+}}
+System.out.println(count);
+}}
