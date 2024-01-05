@@ -1,14 +1,15 @@
 import java.util.Scanner;
-class InputSwap1{
-public static void main(String args[])
+class SumDigits
 {
-Scanner scob=new Scanner(System.in);
-int num1,num2;
-num1=scob.nextInt();
-num2=scob.nextInt();
-int temp;
-temp=num1;
-num1=num2;
-num2=temp;
-System.out.println(num1+"\n" +num2);
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+int n;
+int sd=0;
+n=sc.nextInt();
+while(n>0){
+sd=sd+n%10;
+n=n/10;
+}
+System.out.println(sd);
 }}

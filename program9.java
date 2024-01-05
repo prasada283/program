@@ -1,17 +1,19 @@
 import java.util.Scanner;
-class Countdig{
-static boolean checkDigit(char c)
+class PalindromeString
 {
-boolean b;
-if(c=='0'||c=='1'||c=='2'||c=='3'||c=='4'||c=='5'||c=='6'||c=='7'||c=='8'||c=='9'){
-b=true;
-}
-else
-{
-b=false;
-}
-return b;
-}
 public static void main(String args[]){
-String str;
+Scanner sc=new Scanner(System.in);
+String n;
+String rs="";
+System.out.print("enter a string");
+
+n=sc.next();
+int len =n.length()-1;
+for(int i=len;i>=0;i--)
+{
+rs=rs+n.charAt(i);}
+if(n.equals(rs))
+{System.out.println("palindrome");}
+else
+{System.out.println("not a palindrome");}
 }}

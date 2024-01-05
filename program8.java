@@ -1,18 +1,14 @@
 import java.util.Scanner;
-class FrequencyDigits
+class ReverseString
 {
-public static void main(String args[]) 
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+String n;
+String rs="";
+n=sc.next();
+int len =n.length()-1;
+for(int i=len;i>=0;i--)
 {
-Scanner sc = new Scanner(System.in);
-String str = sc.nextLine();
-int digitCount = 0;
-for (int i = 0; i < str.length(); i++) 
-{         
-if (Character.isDigit(str.charAt(i))) 
-{
-digitCount++;
-}
-}       
-System.out.println("Number of digits: " + digitCount);
-}
-}
+rs=rs+n.charAt(i);}
+System.out.println(rs);
+}}

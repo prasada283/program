@@ -1,32 +1,20 @@
 import java.util.Scanner;
-class Countdig{
-static boolean checkDigit(char c)
+class PalindromeNumbers
 {
-boolean b;
-if(c=='0'||c=='1'||c=='2'||c=='3'||c=='4'||c=='5'||c=='6'||c=='7'||c=='8'||c=='9'){
-b=true;
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+int n;
+ int rd=0;
+System.out.print("Enter any positive integer:");
+n= sc.nextInt();
+int num=n;
+while(n>0){
+rd=rd*10+(n%10);
+n=n/10;
 }
+if(num==rd)
+{System.out.println("Palindrome");}
 else
-{
-b=false;
-}
-return b;
-}
-public static void main(String args[]){
-String str;
-int count=0;
-Scanner s=new Scanner(System.in);
-System.out.println(" ");
-System.out.println("Enter a String:");
-str=s.nextLine();
-System.out.println(" ");
-for(int i=0;i<str.length();i++)
-{
- if(checkDigit(str.charAt(i)))
-{
-count++;
-}
-}
-System.out.println("\nNumber of digits= "+count);
+{System.out.println("Not Palindrome");}
 }
 }

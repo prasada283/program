@@ -1,11 +1,15 @@
 import java.util.Scanner;
-class InputSwap2{
-public static void main(String args[])
+class ReverseDigits
 {
-Scanner scob=new Scanner(System.in);
-int num1,num2;
-num1=scob.nextInt();
-num2=scob.nextInt();
-num1=num1;
-System.out.println(num1+"\n" +num2);
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+int n;
+int rd=0;
+n=sc.nextInt();
+while(n>0){
+rd=rd*10+(n%10);
+n=n/10;
+}
+System.out.println(rd);
 }}

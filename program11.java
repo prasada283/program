@@ -1,9 +1,14 @@
-class ExampleFor5{
+import java.util.Scanner;
+class BreakEx1{
 public static void main(String args[]){
-int i;
-for(i=1;i<=99;i++);{
-System.out.println("Hello"+i);
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+byte i=0;
+while(true){
 
+System.out.print(i+"'");
+if(i==n)break;
+i++;
 }
 }
 }

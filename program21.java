@@ -1,15 +1,30 @@
-class Assignment{
-public static void main(String[] args){
-int num1 = 10,num2 = 20;
-System.out.println("num1="+num1);
-System.out.println("num2="+num2);
-num1 += num2;
-System.out.println("num1= " + num1);
-int a=5; a -=2;
-System.out.println("a= "+ a);
-int p=5; p *=2;
-System.out.println("p= "+ p);
-int x=40; x /=2;
-System.out.println("x= "+  x);
-}
+import java.util.Scanner;
+
+class PrimeNumberChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Take user input
+        System.out.print("Enter a number: ");
+        int userInput = scanner.nextInt();
+
+        // Check if the number is prime
+        if (isPrime(userInput)) {
+            System.out.println(userInput + " is a prime number.");
+        } else {
+            System.out.println(userInput + " is not a prime number.");
+        }
+    }
+
+    static boolean isPrime(int number) {
+        if (number <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
